@@ -1,0 +1,23 @@
+<div class="common-container">
+  <div class="form">
+    <div class="common-header">
+      Login
+    </div>
+    <form (ngSubmit)="login()" [formGroup]="loginForm">
+      <mat-form-field class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+    
+      <mat-form-field class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password">
+      </mat-form-field>
+      <button class="btn btn-success common-btn" [disabled]="loginForm.status !== 'VALID'"> 
+        <mat-spinner [hidden]="!loading" diameter=20 color="warn" style="margin: auto"></mat-spinner>
+        <div [hidden]="loading">Login</div>
+      </button>
+      <div class="common-footer">Don't have account? <span class="redirect" (click)="navigateToRegister()">Register</span></div>
+    </form>
+  </div>
+</div>

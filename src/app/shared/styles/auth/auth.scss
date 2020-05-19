@@ -1,0 +1,38 @@
+.common-container {
+    margin: 24% 0;
+    .form {
+        .common-header {
+            font-size: 19px;
+            color: #5a5959;
+            text-align: left;
+            margin: 25px 0;
+        }
+        text-align: center;
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        width: 100%;    
+        .full-width {
+            width: 100%;
+        }
+
+        .common-btn {
+            
+            width: 250px;
+            margin: 34px 34px 10px 34px;
+        }
+
+        .common-footer {
+            font-size: 14px;
+            color: #5a5858;
+            .redirect {
+                color: #7070dc;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+        }
+    }
+    
+}

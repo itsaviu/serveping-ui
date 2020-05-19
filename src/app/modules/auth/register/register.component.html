@@ -1,0 +1,29 @@
+<div class="common-container">
+  <div class="form">
+    <div class="common-header">
+      Register
+    </div>
+    <form (ngSubmit)="register()" [formGroup]="registerForm">
+      <mat-form-field class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="username">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password">
+      </mat-form-field>
+    
+      <button class="btn btn-success common-btn" [disabled]="registerForm.status !== 'VALID'"> 
+        <mat-spinner [hidden]="!loading" diameter=20 color="warn" style="margin: auto"></mat-spinner>
+        <div [hidden]="loading">Register</div>
+      </button>
+      <div class="common-footer">Already have an account? <span class="redirect" (click)="navigateToLogin()">Login</span></div>
+    </form>
+  </div>
+</div>

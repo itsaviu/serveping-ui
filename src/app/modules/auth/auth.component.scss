@@ -1,0 +1,30 @@
+.auth-wrapper {
+    min-height: 100%;
+    background: #f9f9f9;
+    .auth-container {
+        padding: 2%;
+        background: white;
+        width: 35%;
+        position: absolute;
+        top: 10%;
+        left: 35%;
+        height: 600px;
+        box-sizing: border-box;
+        box-shadow: 0 0.5rem 1rem 0 rgba(44,51,73,.1);
+        border-radius: 4px;
+
+        .auth-header {
+            font-size: 22px;
+            width: 116px;
+            color: white;
+            background: #221f2c;
+            padding: 5px;
+            border-radius: 6px;
+            float: right;
+            .suffix-word {
+                color: #fe5d2c;
+            }
+        }
+
+    }
+}
